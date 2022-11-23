@@ -1,0 +1,11 @@
+server:
+  port: 90
+
+queue-bot-process:
+  activebot: true
+  dateLocalFormat: "America/El_Salvador"
+  time-run: "5s"
+
+
+service:
+  endpoint:
