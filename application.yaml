@@ -1,11 +1,18 @@
 server:
-  port: 90
+  port: 91
+
+datasource:
+  host: "localhost:3306"
+  user: "root"
+  pass: "12345"
+  dbname: "sgp_processor_svc"
 
 queue-bot-process:
   activebot: true
   dateLocalFormat: "America/El_Salvador"
-  time-run: "5s"
+  time-run: "10m"
 
 
 service:
-  endpoint:
+  sgp-info-svc:
+    getDataHistorical: "http://localhost:90/v1/sgp-info-svc/getDataHistorical"

@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec011fcd-540b-43b8-8fea-33aa6d225e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/sgpProcessorSvc/bootstrap/bootstrap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/processReadBot/process/process.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/processReadBot/process/processorReaderBot.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/processReadBot/processor.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/processReadBot/service/serviceBot.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kit/constants/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kit/constants/log-constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kit/saveHistoryPaientInfo/GetDataRepo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kit/saveHistoryPaientInfo/interfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/sgpProcessorSvc/bootstrap/bootstrap.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sgpProcessorSvc/bootstrap/bootstrap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/processReadBot/process/process.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/process/process.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/processReadBot/process/processorReaderBot.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/process/processorReaderBot.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/processReadBot/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/processor.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/josea/go/src/sgp-processor-svc"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josea/go/src/sgp-processor-svc/kit&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josea\go\src\sgp-processor-svc\kit" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\josea\go\src\sgp-processor-svc\internal\processBot\process" />
     </key>
@@ -101,5 +108,16 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/processReadBot/process/process.go</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/dimiro1/health"
 	kitlog "github.com/go-kit/log"
+	"github.com/go-resty/resty/v2"
 	_ "github.com/go-sql-driver/mysql"
 	goconfig "github.com/iglin/go-config"
 	"github.com/rs/cors"
@@ -14,13 +15,18 @@ import (
 	"os"
 	"os/signal"
 	"sgp-processor-svc/internal/processReadBot"
+	"sgp-processor-svc/internal/processReadBot/platform/storage/mysql"
 	"sgp-processor-svc/internal/processReadBot/process"
+	"sgp-processor-svc/internal/processReadBot/service"
+	"sgp-processor-svc/kit/saveHistoryPaientInfo"
 	"syscall"
 )
 
 func Run() {
 	config := goconfig.NewConfig("./application.yaml", goconfig.Yaml)
 	port := config.GetString("server.port")
+
+	client := resty.New()
 
 	var kitlogger kitlog.Logger
 	kitlogger = kitlog.NewJSONLogger(os.Stderr)
@@ -50,9 +56,15 @@ func Run() {
 	}
 
 	////////////////////////////////////////////BOT////////////////////////////////////////////
+
+	repoGetData := saveHistoryPaientInfo.NewGetDataRepository(client, kitlogger)
+
+	repoInsert := mysql.NewGetDataHistorical(db, kitlogger)
+	serviceData := service.NewServiceDataHistorical(repoInsert, kitlogger)
+
 	var processorBotService processReadBot.IProcessReaderBot
 
-	processorBotService = process.NewProcessReaderBot(context.Background(), kitlogger)
+	processorBotService = process.NewProcessReaderBot(context.Background(), kitlogger, repoGetData, serviceData)
 
 	if config.GetBool("queue-bot-process.activebot") {
 		go processorBotService.ProcessReaderInitializer()
