@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec011fcd-540b-43b8-8fea-33aa6d225e6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/processReadBot/service/serviceBot.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kit/constants/errors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kit/constants/log-constants.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kit/saveHistoryPaientInfo/GetDataRepo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kit/saveHistoryPaientInfo/interfaces.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/sgpProcessorSvc/bootstrap/bootstrap.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/sgpProcessorSvc/bootstrap/bootstrap.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/processReadBot/process/process.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/process/process.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/processReadBot/process/processorReaderBot.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/process/processorReaderBot.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/processReadBot/processor.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/processor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
