@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec011fcd-540b-43b8-8fea-33aa6d225e6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/processReadBot/platform/storage/mysql/InsertDataPatientHistorical.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/app/V1__init_commit.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/app/V2__create_table_sgp_processor.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/flyway.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/josea/go/src/sgp-processor-svc/kit&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nelson/go/src/sgp-processor-svc&quot;
   }
 }</component>
   <component name="RecentsManager">
