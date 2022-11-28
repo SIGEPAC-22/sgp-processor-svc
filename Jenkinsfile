@@ -47,7 +47,7 @@ pipeline {
         }
       }
       steps {
-        sh 'SonarQube'
+        echo 'SonarQube'
       }
     }
     stage('RUN DB DEV') {
