@@ -209,7 +209,7 @@ pipeline {
           } else {
             sh '''
             docker build . -t ${name_final}
-            docker run -dt -p 30201:90 --name ${name_final} ${name_final}
+            docker run -dt -p 30206:90 --name ${name_final} ${name_final}
             docker system prune -f
 	    '''
           }
