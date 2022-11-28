@@ -47,7 +47,7 @@ pipeline {
         }
       }
       steps {
-        sh 'echo SonarQube'
+        sh 'SonarQube'
       }
     }
     stage('RUN DB DEV') {
@@ -146,7 +146,7 @@ pipeline {
             docker stop ${name_final}
             docker rm -vf ${name_final}
             docker build . -t ${name_final}
-            docker run -dt -p 30101:90 --name ${name_final} ${name_final}
+            docker run -dt -p 30106:90 --name ${name_final} ${name_final}
             docker system prune -f
 	    '''
           } else {
