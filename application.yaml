@@ -9,7 +9,7 @@ datasource:
 
 queue-bot-process:
   activebot: true
-  dateLocalFormat: "America/El_Salvador"
+  dateLocalFormat: "America/New_York"
   time-run: "1m"
 
 
