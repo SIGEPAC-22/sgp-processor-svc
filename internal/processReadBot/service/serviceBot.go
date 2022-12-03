@@ -23,7 +23,7 @@ func (s *serviceDataHistorical) ServiceProcessGetDataHistorical(ctx context.Cont
 
 		errRepo := s.repo.InsertProcessGetDataHistorical(ctx, data.IdPatient, data.IdPatientFile, data.FirstName, data.SecondName, data.FirstLastName, data.SecondLastName, data.AdmissionDate, data.HighDate, data.LowDate)
 		if errRepo != nil {
-			s.log.Log("Repo insert failed", constants.UUID, ctx.Value(constants.UUID))
+			s.log.Log("Repo insert failed", "error", errRepo.Error(), constants.UUID, ctx.Value(constants.UUID))
 			continue
 		}
 	}

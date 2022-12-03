@@ -1,0 +1,1 @@
+ALTER TABLE ${flyway:database}.his_historical MODIFY COLUMN his_high_date DATE DEFAULT '0001-01-01';

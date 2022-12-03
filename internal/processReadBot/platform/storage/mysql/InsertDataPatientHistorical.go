@@ -17,7 +17,7 @@ func NewGetDataHistorical(db *sql.DB, log log.Logger) *GetDataHistorical {
 }
 
 func (g *GetDataHistorical) InsertProcessGetDataHistorical(ctx context.Context, idPatient int, idPatientFile int, firstName string, secondName string, firstLastName string, secondLastName string, admissionDate string, highDate string, lowDate string) error {
-	sql, err := g.db.ExecContext(ctx, "INSERT INTO his_historical(his_id_patient,his_id_file_patient,his_first_name,hist_second_name,his_first_last_name,his_second_last_name,\nhis_admission_date,his_high_date,his_low_date)VALUES(?,?,?,?,?,?,?,?,?);", idPatient, idPatientFile, firstName, secondName, firstLastName, secondLastName, admissionDate, highDate, lowDate)
+	sql, err := g.db.ExecContext(ctx, "INSERT INTO his_historical(his_id_patient,his_id_file_patient,his_first_name,his_second_name,his_first_last_name,his_second_last_name,\nhis_admission_date,his_high_date,his_low_date)VALUES(?,?,?,?,?,?,?,?,?);", idPatient, idPatientFile, firstName, secondName, firstLastName, secondLastName, admissionDate, highDate, lowDate)
 	g.log.Log("query about to exec", "query", sql, constants.UUID, ctx.Value(constants.UUID))
 	if err != nil {
 		g.log.Log("Error when trying to insert information", "error", err.Error(), constants.UUID, ctx.Value(constants.UUID))
