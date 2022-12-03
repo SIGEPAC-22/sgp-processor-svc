@@ -15,4 +15,4 @@ queue-bot-process:
 
 service:
   sgp-info-svc:
-    getDataHistorical: "http://54.91.225.24:30001/v1/sgp-info-svc/getDataHistorical"
+    getDataHistorical: "http://54.91.225.24:90/v1/sgp-info-svc/getDataHistorical"
