@@ -26,6 +26,6 @@ func (p processReader) ProcessReader(ctx context.Context) {
 
 	errService := p.service.ServiceProcessGetDataHistorical(ctx, respRepo)
 	if errService != nil {
-
+		p.log.Log("Error service Get Data Historical", "error", errService.Error(), constants.UUID, ctx.Value(constants.UUID))
 	}
 }
